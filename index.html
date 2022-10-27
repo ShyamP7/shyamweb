@@ -1,0 +1,138 @@
+<html>
+<head>
+<title> registration form</title>
+<img src="pic.jpg" height="1100" width="1000" align="right">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:  lightsteelblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+img{
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+form h1 b{
+  position: relative;
+  left:  10%;
+  /*transform: translateX(-50%);*/
+
+}
+form button {
+position:relative;
+left:  20%;
+}
+/* Add padding to containers */
+.container {
+  padding: 20px;
+  background-color: white;
+}
+.submit
+{
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1 px solid white;
+  font-weight: bold;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  text-align: center;
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  /*background: #f1f1f1;*/
+  border-color: baseline-shift: ;
+}border-radius: 20px
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #green;
+  text-align: center;
+}
+</style>
+<!-- <link rel="stylesheet" type="text/css" href="registration.css"> -->
+</head>
+<body>
+
+
+
+<form name="form1" method="post" action="form1.php">
+  <h1 align="left" ><b>REGISTARTION FORM</b></h1><br><br><br>
+
+<input type="text" id="first-name" name="first-name" placeholder="FIRST NAME" required><br><br>
+
+<input type="text" id="last-name" name="last-name" placeholder="LAST NAME"   required><br><br>
+
+<textarea  id="address" cols="30" rows="5"  name="address" placeholder="ADDRESS"   required></textarea><br><br>
+<label for="gender">GENDER :</label>
+
+<input type="radio" id="gender" name="gender" value="male" required>
+<label>MALE</label>
+<input type="radio" id="gender" name="gender" value="female" required>
+<label>FEMALE </label><br><br>
+
+<input type="tel"id="phone-no" name="phone-no" pattern="[0-9]{10}" placeholder="PHONE"  required><br><br>
+
+<input type="email" id="email-id" name="email-id" placeholder="EMAIL ID" reqiured><br><br>
+<label>EMPLOYMENT STATUS :</label>
+<select id="status" name="status">
+	<option value="employed">EMOPLOYED</option>
+	<option value="fresher">FRESHER</option>
+	<option value="student">STUDENT</option>
+</select><br><br>
+<input type="text" id="qualification" name="qualification" placeholder="EDUCATIONAL QUALIFICATION" required><br><br>
+
+<input type="text" id="college-name" name="college-name" placeholder="NAME OF THE COLLEGE" required><br><br>
+<label>TELL US MORE ABOUT YOU</label><br><br>
+<textarea  name="tell" rows="10"cols="80"></textarea><br><br>
+
+<button type="submit" name="submit" class="submit" id="submit">SUBMIT</button>
+
+
+
+
+</form>
+</body>
+</html>
